@@ -10,7 +10,7 @@ gem install sinatra
 
 **Iniciar o servidor:** ruby app.rb
 
-# **Acessar:**
+### **Acessar:**
 Abra o navegador em http://localhost:4567
 
 ### 🛠 Tecnologias utilizadas
