@@ -7,9 +7,11 @@ Pré-requisitos: Certifique-se de ter o Ruby instalado.
 ## Instalar dependências:
 
 gem install sinatra
-3. **Iniciar o servidor:**
-ruby app.rb
-Acessar: Abra o navegador em http://localhost:4567
+
+**Iniciar o servidor:** ruby app.rb
+
+# **Acessar:**
+Abra o navegador em http://localhost:4567
 
 ### 🛠 Tecnologias utilizadas
 Back-end: Ruby, Sinatra
