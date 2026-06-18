@@ -6,7 +6,6 @@ Pré-requisitos: Certifique-se de ter o Ruby instalado.
 
 ## Instalar dependências:
 
-Bash
 gem install sinatra
 3. **Iniciar o servidor:**
 ruby app.rb
