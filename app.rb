@@ -1,17 +1,23 @@
 require 'sinatra'
 
-set :saldo, 0.0
+require 'sinatra'
+require 'json'
+
+set :transacoes, []
 
 get '/' do
   erb :index
 end
 
-post '/adicionar' do
-  valor = params[:valor].to_f
-  settings.saldo += valor
-  settings.saldo.to_s
+get '/transacoes' do
+  content_type :json
+  settings.transacoes.to_json
 end
 
-get '/saldo' do
-  settings.saldo.to_s
+post '/adicionar' do
+  valor = params[:valor].to_f
+  settings.transacoes << valor 
+  
+  saldo_total = settings.transacoes.sum
+  saldo_total.to_s
 end

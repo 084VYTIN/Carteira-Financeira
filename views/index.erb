@@ -2,15 +2,27 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Minha Carteira</title>
+    <title>Carteira Digital</title>
+
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <h1>Saldo Atual: R$ <span id="saldo">0.00</span></h1>
-    
-    <input type="number" id="valor" placeholder="Digite um valor">
-    <button onclick="adicionarDinheiro()">Adicionar</button>
+    <div class="card">
+        <h1>Carteira Digital</h1>
+        <div class="saldo-container">
+            <p>Saldo Atual</p>
+            <h2 id="saldo">R$ 0.00</h2>
+        </div>
+        
+        <input type="number" id="valor" placeholder="Valor (ex: 50.00)">
+        <button onclick="adicionarDinheiro()">Adicionar Transação</button>
 
+        <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+        <h3>Histórico</h3>
+        <ul id="historico" style="list-style: none; padding: 0; text-align: left;"></ul>
+    </div>
+
+    
     <script src="/js/script.js"></script>
 </body>
 </html>

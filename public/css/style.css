@@ -1,33 +1,48 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #eef2f3;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
-    background-color: #f4f4f9;
+    margin: 0;
 }
 
-h1 {
-    color: #333;
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 350px;
+    text-align: center;
+}
+
+#saldo {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    color: #27ae60;
 }
 
 input {
+    width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
 }
 
 button {
-    padding: 10px 20px;
-    background-color: #28a745;
+    width: 100%;
+    padding: 12px;
+    background-color: #27ae60; /* Verde de volta! */
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #219150;
 }
